@@ -7,6 +7,11 @@
 .red{
     color:red;
 }
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
 
 .floatingHeading {
     font-family: 'Manrope', sans-serif;
@@ -96,13 +101,15 @@ h2{
 }
 footer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 20px;
+    grid-template-columns: 250px 200px 200px 200px 200px;
+    /* gap: 20px; */
     padding: 20px;
     background-color: #555555;
     color: #fff;
     font-family: 'Manrope' , sans-serif;
     height: 700px;
+    width: 100%;
+   
 }
 ul{
     list-style: none;
@@ -198,4 +205,19 @@ h4{
 .connect{
     text-decoration: underline;
     font-family: 'Manrope' , sans-serif;
+}
+.sign_up{
+    width: 100%;
+}
+.bottom{
+    border-top: 1px solid white;
+    height: 1rem;
+    text-align: center;
+    background-color: #555555;
+    padding: 2rem 0;
+    color: white;
+}
+
+.mycelloflask img{
+    width: 100%;
 }
