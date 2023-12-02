@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255,255,255);
+}
+
+.dinnnerWareType{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 100vw;
+    height:40vh ;
+}
+.types{
+    /* border: 2px solid black; */
+    padding: 0 20px;  
+}
+
+.types a{
+    text-decoration: none;
+    font-weight: 100;
+    text-transform:uppercase;
+    color: black;
+    font-family:'Manrope', sans-serif;
+    font-size: 14px;
+}
+
+/* .types a:hover .types{
+    background-color: whitesmoke;
+} */
+
+.types a:hover .button{
+    background-color: #ED3338;
+    color: white;
+    transition: all 0.200s;
+}
+
+.types a:hover img{
+    opacity: 70%;
+    transition: all 1s;
+}
+
+
+.types img{
+    /* filter: brightness(95%); */
+    width: 100%;
+    height: 80%;
+}
+
+.types .button{
+    display: flex;
+    /* border: 1px solid blue; */
+    align-items: center;
+    height: 5vh;
+    justify-content: center;
+    padding: 5px;
+
+    /* margin-top: 10px; */
+}
+
+.container_box{
+    /* height: 200vh; */
+    width: 95vw;
+    /* border:2px solid black; */
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 1px; */
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    /* border: 2px solid orange; */
+    width: 23%;
+    height: 90vh;
+    margin-top: 30px;
+ padding-bottom: 10px; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.image_container{
+    padding: 0.5rem;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 48%;
+}
+
+.image_container img{
+    /* object-fit: var(--product-cart-image-fit); */
+    object-position: center center;
+    transition: all .9s ease;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+   object-fit: cover;
+   overflow: hidden;
+}
+.image_container.one img:hover {
+    content: url("https://cdn.shopify.com/s/files/1/0801/3922/3334/files/8904350443246_1_1370x.jpg?v=1698931268");
+    transform: scale(1.07);
+ } 
+ .image_container.two img:hover {
+    content: url("https://cdn.shopify.com/s/files/1/0801/3922/3334/files/8901372122043_1_1370x.jpg?v=1698414865");
+    transform: scale(1.07);
+ } 
+ .image_container.three img:hover {
+    content: url("https://cdn.shopify.com/s/files/1/0801/3922/3334/files/8904350433056_1_1370x.jpg?v=1698414867");
+    transform: scale(1.07);
+ } 
+ .image_container.four img:hover {
+    content: url("https://cdn.shopify.com/s/files/1/0801/3922/3334/files/8904350408245_2_3f173e3d-9711-4f3e-ba17-63b4fbbe4d80_1370x.jpg?v=1697119031");
+    transform: scale(1.07);
+ } 
+
+ .container button{
+    width: 96%;
+    height: 3rem;
+    color: rgb(248,71,81);
+    margin: 0.5% 2%;
+    background:transparent;
+    border: 0.1rem solid rgb(248,71,81);
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: all 0.8s;
+ }
+
+ .container button:hover{
+    background-color: rgb(248,71,81);
+    color: white;
+ }
+
+ .dummyImages{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    width: 80%;
+    /* border: 2px solid red; */
+ }
+ .di{
+    width: 30%;
+    margin-left: 10px;
+    /* border-radius: 50%; */
+    /* border: 1px solid green; */
+ }
+
+ .di img{
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+ }
+
+ .product_name a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+ }
+
+ .price .actualPrice,.discountPrice{
+    font-size: 19px;
+ }
+
+ .actualPrice{
+    text-decoration: line-through;
+ }
+
+ .discountPrice{
+    margin-left: 0.8rem;
+    color:#D14C46;
+ }
+
+ .saving{
+    margin-left: .8rem;
+    background-color: #D14C46;
+    color: white;
+    width: 42%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+ }
