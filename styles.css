@@ -96,7 +96,7 @@ h2{
 }
 footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(5, 1fr); 
     gap: 20px;
     padding: 20px;
     background-color: #555555;
@@ -112,10 +112,14 @@ li a {
     text-decoration: none;
     
 }
+li{
+    padding-bottom: 12px;
 
+}
 li a:hover{
     cursor: pointer;
     text-decoration: underline;
+    
 }
 
  .icons a{
@@ -141,10 +145,57 @@ li a:hover{
 .content{
     display: flex;
     flex-direction: column;
-    padding: 1px 0px;
-    gap: 1.5rem;
+    padding: 10px 10px 10px 15px;
+    
+  
 }
 
 .time ul{
     padding: 2px;
+}
+h4{
+    padding-top: 20px;
+    padding-bottom: 12px;
+    
+}
+.msg{
+    width: 350px;
+    padding-bottom: 13px;
+}
+
+.explore ,.products , .support , .help{
+    padding-top: 12px;
+}
+
+
+.news{
+    padding-bottom: 20px;
+}
+.email_id ::placeholder{
+    padding: 10px;
+    margin: 15px;
+}
+.email_id input{
+   height: 50px;
+   width: 250px;
+}
+.sub{
+    height: 50px;
+    width: 130px;
+   background-color: #ED3338;
+}
+
+.sub p{
+    padding-left: 22px;
+    padding-top: 18px;
+}
+
+.wrap{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.connect{
+    text-decoration: underline;
+    font-family: 'Manrope' , sans-serif;
 }
