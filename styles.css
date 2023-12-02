@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red{
+    color:red;
+}
+
+.floatingHeading {
+    font-family: 'Manrope', sans-serif;
+    display: inline-block;
+    background-color: white;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.logo{
+    height: 65px;
+    width: 65px;
+  
+}
+.navbar {
+    display: flex;
+    align-items: center;
+  }
+
+.searchbar {
+    margin-left: 10px; 
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 10px;
+    width: 400px;
+    margin: 0px 15px;
+
+  }
+  
+.searchbar input {
+    background-color: #F6F6F6;
+    width: 380px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-style: 'Manrope' , sans-serif;
+    color: rgb(165, 165, 165);
+    font-size: 16px;
+}
+  
+.personal_icons {
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+}
+  
+  .personal_icons i, .personal_icons p {
+    margin-left: 10px; 
+}
+.categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.types{
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+    font-family: 'Manrope' , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.sub_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ED3338;
+    padding: 13px;
+}
+
+.sub_type{
+    color: white;
+    text-decoration: none;
+    font-family: 'Manrope' , sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    font-stretch: expanded;
+    margin: 30px;
+}
+
+h2{
+    font-family: 'Manrope' , sans-serif;
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    background-color: #555555;
+    color: #fff;
+    font-family: 'Manrope' , sans-serif;
+    height: 700px;
+}
+ul{
+    list-style: none;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ .icons a{
+    color: #C2C2C2;
+ }
+
+.marketing{
+    background-color: #E4E7E5;
+    display: flex;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+}
+.marketing p{
+    font-family: 'Manrope' , sans-serif;
+    padding: 40px;
+    margin: 10px;
+}
+.icons {
+    padding-top: 2rem;
+    display: flex;
+    gap: 1.6rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 1px 0px;
+    gap: 1.5rem;
+}
+
+.time ul{
+    padding: 2px;
+}
