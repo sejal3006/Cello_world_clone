@@ -16,6 +16,9 @@
 body{
   font-family: 'Manrope', sans-serif;
 }
+section{
+  padding-top: 1rem;
+}
 .jar_con_wrapper{
   margin: 1rem 0;
   padding: 0 1rem;
@@ -128,6 +131,7 @@ font-size: 14px;
 list-style: none;
 /* padding: 20px; */
 padding-top: 1.5rem;
+padding-bottom: 2rem;
 overflow-x: hidden;
 display: grid;
 grid-template-columns: repeat(4,1fr);
@@ -164,7 +168,7 @@ row-gap: 3rem;
   background-color: var(--error);
   color: var(--light);
 }
-.msgs>span:last-child{
+.msgs>span:nth-child(3){
   background-color: gray;
   color: var(--light);
 }
@@ -261,7 +265,7 @@ box-shadow: 0 8px 12px 5px #959494;
   margin: 15px 0;
   cursor: pointer;
 }
-.cards_wrapper>ul>li>button:hover{
+.card_wrapper>button:hover{
   background-color: var(--error);
   color: var(--light);
 }
@@ -331,8 +335,20 @@ box-shadow: 0 8px 12px 5px #959494;
  } 
  .cards_wrapper>ul>li{
   width: 100%;
+  padding: 0 20px;
  }
  .card_wrapper{
   width: 100%;
  }
+}
+@media only screen and (min-width: 820px) {
+  
+::-webkit-scrollbar {
+  width: 1px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  width: 2px;
+}
 }
