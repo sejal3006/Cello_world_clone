@@ -45,7 +45,9 @@ body{
     padding-top: 30px;
     flex-wrap: wrap;
     margin: 10px;
-    gap: 10px;
+    /* gap: 10px; */
+    align-items: center;
+    justify-content:flex-start;
 
   }
   .personal_icons{
@@ -133,6 +135,7 @@ h2{
 
 .main{
     padding: 15px;
+    font-family: Manrope, sans-serif;
 }
 
 .title{
@@ -741,12 +744,13 @@ li a:hover{
 .marketing{
     background-color: #E4E7E5;
     display: flex;
-    justify-content: space-around ;
+    justify-content:flex-start;
     flex-wrap: wrap;
+    align-items: center;
 }
 .marketing p{
     font-family: 'Manrope' , sans-serif;
-    padding: 40px;
+    padding: 30px;
     margin: 10px;
 }
 .icons {
@@ -871,4 +875,8 @@ h4{
 
 .box:hover .project-hide {
     opacity: 1;
+}
+
+.footer-container{
+    height: 100vh;
 }
