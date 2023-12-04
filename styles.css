@@ -116,6 +116,17 @@ h2{
     margin: 30px;
     font-size: 40px;
 }
+.owl-carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.owl-carousel img{
+    max-width: 100%;
+    width: 100%;
+}
+#owl-carousel{
+    display: flex;
+}
 
 footer {
     display: grid;

@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icons" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ZrpbBQW8FEXC21rHj2xPeScZ6Iw1hYg3TF3Sg+9PZkgjx6+6ATt2V4AgBCl5ksVJ" crossorigin="anonymous">
-
-
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script> -->
     <title>Cello World</title>
 </head>
 <body>
@@ -85,16 +89,23 @@
         </div>
       </div>
     </header>
-    <div class="slider-container">
+    <!-- <div class="slider-container">
       <div class="slider">
         <img src="https://celloworld.com/cdn/shop/files/FLASK_WINTER_BANNER_1920_X_520_PX.jpg?v=1700568423&width=1880" alt="bottles">
         <img src="https://celloworld.com/cdn/shop/files/BAKEWARE_WINTER_BANNER_1920_X_520_PX_7.jpg?v=1700648074&width=1880" alt="bakery">
       </div>
-    </div> 
-    <!-- <div class="carousel">
-      <div class="carousel-cell"  style ="background-image: url(https://celloworld.com/cdn/shop/files/FLASK_WINTER_BANNER_1920_X_520_PX.jpg?v=1700568423&width=1880);"></div>
-    </div> -->
-    
+    </div>  -->
+    <div  id=" owl-carousel" class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="https://celloworld.com/cdn/shop/files/FLASK_WINTER_BANNER_1920_X_520_PX.jpg?v=1700568423&width=1880" alt="">
+      </div>
+      <div class="item">
+        <img src="https://celloworld.com/cdn/shop/files/BAKEWARE_WINTER_BANNER_1920_X_520_PX_7.jpg?v=1700648074&width=1880" alt="">
+      </div>
+      <!-- <div class="item"></div>
+      <div class="item"></div> -->
+
+  </div>
  
       <div class="heading_1">
         <h2>Best Sellers</h2>
@@ -479,7 +490,34 @@
     <p class="bottom">© 2023 Cello World.All Rights Reserved.</p>
     </div>
     <script src="https://kit.fontawesome.com/ea505a5089.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+// });
+      // $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+      })
+    </script>
+    <!-- <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
     
     
 </body>
+
 </html>
