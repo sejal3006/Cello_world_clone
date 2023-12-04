@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
     width: 100%;
     height: 100%;
+      font-family: 'Manrope', sans-serif;
 }
 
 .floatingHeading {
@@ -21,37 +22,103 @@ body{
     font-weight: 500;
     font-size: 14px;
 }
+
+.left_sec{
+  display:flex;
+  gap:1.5rem;
+ display: none; 
+}
+.left_sec>i:first-child{
+  font-size: 25px;
+}
+.left_sec>i:nth-child(2){
+  font-size: 21px;
+}
 .logo{
     height: 65px;
     width: 65px;
-  
+}
+.nav_wrapper{
+  height: 6rem;
+     display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    margin-bottom: 1rem;
+    background-color: white;
 }
 .navbar {
-    display: flex;
+    /* max-width: 1250px; */
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: 100px 70% 1fr; */
+    width: 100%;
     align-items: center;
-    padding-right: 40px;
-    padding-left: 25px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    flex-wrap: wrap;
-    margin: 10px;
-    gap: 10px;
-
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
   }
+  .navbar_fixed{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  
+  }
+  .mobile_personal_icons{
+    display: flex;
+    display: none;
+    gap: 1.5rem;
+  }
+  .mobile_personal_icons>.user{
+    font-size: 23px;
+  }
+  .mobile_personal_icons>.bag_icon>svg{
+    width: 23px;
+    height: 23px;
+  }
+
   .personal_icons{
     display: flex;
+    gap: 1.5rem;
     justify-content: space-evenly;
     align-items: center;
-
   }
-
+.personal_icons>svg{
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    top: 1px;
+    stroke: black;  
+}
+.personal_icons>svg:first-child{
+    fill: transparent;
+    stroke-width: 2px;
+}
+.personal_icons>svg:nth-child(2){
+  width: 22px;
+  height: 22px;
+  top: 2px;
+}
+.personal_icons>p{
+  /* display: none; */
+}
+.personal_icons>svg:last-child{
+  width: 22px;
+  height: 22px;
+}
 .searchbar {
     margin-left: 10px; 
     display: flex;
     align-items: center;
     background-color: #F6F6F6;
     padding: 10px;
-    width: 800px;
+    max-width: 100%;
+    min-width: 800px;
+    align-self: left;
     margin: 0px 15px;
     height: 50px;
     border-radius: 5px;
@@ -59,7 +126,7 @@ body{
   
 .searchbar input {
     background-color: #F6F6F6;
-    width: 380px;
+    width: 100%;
     border: none;
     outline: none;
     padding-left: 15px;
@@ -67,11 +134,16 @@ body{
     color: rgb(165, 165, 165);
     font-size: 16px;
 }
+.search_icon{
+  width: 22px;
+  height: 22px;
   
+}
 .personal_icons {
     margin-left: auto; 
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
   
   .personal_icons i, .personal_icons p {
@@ -79,12 +151,17 @@ body{
 }
 .categories{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: 10px;
-
+    gap: .5rem;
+    
 }
-
+ .item1  :hover{
+    background-image: ;
+    height: 30px;
+    width: 40px;
+}
 .types{
     color: rgb(30, 30, 30);
     text-decoration: none;
@@ -99,16 +176,41 @@ body{
     background-color: #ED3338;
     padding: 13px;
 }
+@media only screen and (max-width: 820px){
+  .left_sec{
+    display:flex;
+  }
+  .mobile_personal_icons{
+    display:flex;
+  }
+  .searchbar{
+    display: none;
+  }
+  .icon_wrapper{
+    display: none;
+  }
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.categories{
+  display: none;
+}
+.sub_heading{
+  display: none;
+}
+}
 
 .sub_type{
     color: white;
     text-decoration: none;
     font-family: 'Manrope' , sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 15px;
     font-stretch: expanded;
     margin: 30px;
 }
+
 
 h2{
     font-family: 'Manrope' , sans-serif;
