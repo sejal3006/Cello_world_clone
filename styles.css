@@ -51,7 +51,7 @@ body{
     align-items: center;
     background-color: #F6F6F6;
     padding: 10px;
-    width: 900px;
+    width: 800px;
     margin: 0px 15px;
     height: 50px;
     border-radius: 5px;
@@ -84,11 +84,7 @@ body{
     padding-bottom: 10px;
 
 }
- .item1  :hover{
-    background-image: ;
-    height: 30px;
-    width: 40px;
-}
+
 .types{
     color: rgb(30, 30, 30);
     text-decoration: none;
@@ -120,6 +116,7 @@ h2{
     margin: 30px;
     font-size: 40px;
 }
+
 footer {
     display: grid;
     grid-template-columns: 250px 200px 200px 200px 200px;
@@ -210,7 +207,11 @@ h4{
     width: 130px;
    background-color: #ED3338;
 }
-
+.sub:hover{
+    cursor: pointer;
+    background-color: #151313;
+    transition: all 0.6s;
+}
 .sub p{
     padding-left: 25px;
     padding-top: 18px;
@@ -264,6 +265,7 @@ h4{
     /* gap:10px; */
     flex-wrap: wrap;
     position: relative;
+    gap: 0.5rem;
    
 
 }
@@ -284,21 +286,16 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
     position: relative;
-    /* margin-top:-40px; */
-    /* left:5px; */
     gap: 10px;
     width: 100%;
     height:300px;
-    /* border:1px solid black; */
+  
 }
  
 
 .card-view .card-img{
-    /* border: 1px solid black; */
-    /* background-color: #f8f7fc; */
-    /* z-index: 1; */
+   
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -470,10 +467,9 @@ h4{
 }
 
 .project-section {
-    width: 98%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* padding-right: 190px; */
+    pad: 3rem;
 }
 
 .box {
