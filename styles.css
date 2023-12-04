@@ -120,13 +120,11 @@ h2{
     display: flex;
     flex-wrap: nowrap;
 }
-.owl-carousel img{
+.owl-carousel div{
     max-width: 100%;
     width: 100%;
 }
-#owl-carousel{
-    display: flex;
-}
+
 
 footer {
     display: grid;
@@ -523,4 +521,3 @@ h4{
 .box:hover .project-hide {
     opacity: 1;
 }
-
