@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Manrope" , sans-serif;
+    background-color: #fbfbfb;
+    scroll-behavior: smooth;
+}
+/* mobile header */
+
+.mobile-header{
+    display:none;
+}
+
+/* header section */
+
+.message{
+    margin-top: 20px;
+    height: 40px;
+}
+.red{
+    color:red;
+}
+.cello_logo{
+    width:65px;
+    height: 65px;
+}
+.header_flexcontainer{
+    display: flex;
+    width: 95vw;
+    margin: 0 auto;
+   }
+.cello_logo{
+    margin-right: 30px;
+}
+.search_bar{
+    flex:1;
+   align-self: flex-end;
+  }
+  input{
+     width: 800px;
+    height: 44px;
+    border-radius: 0 7px 7px 0;
+  }
+  input::placeholder{
+    font-size: 16px;
+    position: relative;
+    top:2px;
+  }
+  .search_bar{
+    display: flex;
+    position: relative;
+    top: -10px;
+}
+.header_right_icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.header_right_icons i{
+    font-size: 20px;
+}
+.header_right_icons i:hover{
+  transform: scale(1.11);
+}
+
+.Products_1sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:35px;
+    position: relative;
+    top:30px
+}
+.Products_1sec a{
+    text-decoration: none;
+    color:rgb(48, 48, 48);
+}
+
+.Products_2sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:45px;
+    gap:35px;
+    background-color: red;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 560;
+}
+
+.Products_2sec a{
+ text-decoration: none;
+ color:white;
+}
+
+/* main section */
+
+/* drinkware items section */
+
+.drinkware_items{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.drinkware_items img{
+  width: 180px;
+}
+
+.item1 p{
+    font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  color:rgb(48, 48, 48);
+}
+.item2 p{
+    font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  color:rgb(48, 48, 48);
+}
+.item3 p{
+    font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  color:rgb(48, 48, 48);
+}
+.item4 p{
+    font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  color:rgb(48, 48, 48);
+}
+.item5 p{
+    font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  color:rgb(48, 48, 48);
+}
+.item6 p{
+    font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  color:rgb(48, 48, 48);
+}
+.item1:hover p{
+    background-color: red;
+    color:white;
+   }
+   .item2:hover p{
+       background-color: red;
+       color:white;
+      }
+      .item3:hover p{
+       background-color: red;
+       color:white;
+      }
+      .item4:hover p{
+       background-color: red;
+       color:white;
+      }
+      .item5:hover p{
+       background-color: red;
+       color:white;
+      }
+      .item6:hover p{
+       background-color: red;
+       color:white;
+      }
+
+      .item1:hover .item1-img{
+        opacity: 0.7;
+      }
+      .item2:hover .item2-img{
+        opacity: 0.7;
+      }
+      .item3:hover .item3-img{
+        opacity: 0.7;
+      }
+      .item4:hover .item4-img{
+        opacity: 0.7;
+      }
+      .item5:hover .item5-img{
+        opacity: 0.7;
+      }
+      .item6:hover .item6-img{
+        opacity: 0.7;
+      }
+
+/* drinkware filter section */
+
+.filter{
+    margin: 30px auto;
+    margin-top: 50px;
+    width: 90vw;
+    display: flex;
+ justify-content: space-between;
+}
+
+.left_corner{
+    display: flex;
+    gap:20px
+}
+.filter_items{
+display: flex;
+justify-content: space-between;
+width: 180px;
+border:1px solid #c3c3c3;
+height: 40px;
+color: rgb(90, 90, 90);
+font-size: 15px;
+}
+.filter_items_4thsec{
+    width: 180px;
+    border:1px solid #c3c3c3;
+    height: 40px;
+    display: flex;   
+    justify-content: center;
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+}
+.filter_items_4thsec span{
+    position: relative;
+    top:8.5px;
+    margin-left: 7px;
+    margin-right: 10px;
+}
+.filter_items span{
+    position: relative;
+    top:9px;
+    left:7px;
+}
+.filter_items svg{
+    margin-right: 5px;
+}
+
+.right_corner{
+    width: 250px;
+    border:1px solid #c3c3c3;
+    height: 40px;
+}
+.right_corner_flexcontainer{
+    display: flex ;
+    justify-content:space-around;
+   position: relative;
+   top:-10px;
+   font-size: 15px;
+}
+
+/* price tag section */
+
+.product_pricetags{
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
+   row-gap: 50px;
+   position: relative;
+   right: 10px;
+   margin-bottom:80px;
+}
+
+.tag_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 7px; 
+    width: 320px;
+    height: 600px;
+    background-color: white;
+    box-shadow:0 20px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    left: 50px;
+    
+}
+.tagimage_container{
+    width: 310px;
+    height: 310px;
+    overflow: hidden;
+}
+.tag_1 img{
+    position: relative;
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+}
+.tag_1 img:hover{
+ transform: scale(1.15);
+ transition: 0.5s ease-in-out;
+}
+
+.image-right-icons{
+    position: absolute;
+    top:15px;
+    right: 10px;
+    
+}
+#hearticon{
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#eyeicon{
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+}
+.image-left-icon{
+    position: absolute;
+    z-index: 10;
+    top:15px;
+    left: 10px;
+}
+.offer_tag{
+    background-color: darkred;
+    width: 70px;
+    padding: 2px;
+    color:white;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+}
+.new{
+    width: 40px;
+    margin-bottom: 5px;
+    background-color: white;
+    color: rgb(48, 48, 48);
+    text-align: center;
+}
+button{
+    width: 310px;
+    border:1px solid red;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    color:red;
+    position: relative;
+    top:30px;
+}
+button:hover{
+    position: relative;
+    text-decoration: none;
+    color: red;
+    background-color: red;
+    color: white;
+    transition: 0.25s ease-in-out;
+}
+.pricetag_content:hover{
+    border-bottom: 2px solid black;
+   
+}
+.color_varieties{
+   display: flex;
+   gap: 8px;
+   margin-top: 10px;
+position: relative;
+}
+.color_item1{
+    border:1px solid black;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item2{
+    border:1px solid black;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item3{
+    border:1px solid black;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item4{
+    border:1px solid black;
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item5{
+    border:1px solid black;
+    background-color: brown;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item6{
+    border:1px solid black;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item7{
+    border:1px solid black;
+    background-color: purple;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item8{
+    border:1px solid black;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item9{
+    border:1px solid black;
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item10{
+    border:1px solid black;
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color_item11{
+    border:1px solid black;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.pricetag_content a{
+    position: relative;
+   text-decoration: none;
+   color: rgb(48, 48, 48);
+}
+.price{
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+    position: relative;
+    right: 40px;
+}
+
+/* aside  */
+
+.aside_section{
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    height: 110px;
+    position: fixed;
+    z-index: 10;
+    top:40%;
+    right: 25px;
+    align-items: center;
+   
+}
+.aside_section i{
+  position: relative;
+  top:7px;
+  background-color: #ffffff;
+  padding: 10px;
+  }
+
+  /* footer section */
+
+  footer {
+    display: grid;
+    grid-template-columns: 250px 200px 200px 200px 200px;
+    /* gap: 20px; */
+    padding: 20px;
+    background-color: #555555;
+    color: #fff;
+    font-family: 'Manrope' , sans-serif;
+    min-height: 700px;
+    width: 100vw;
+   overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    
+}
+li{
+    padding-bottom: 12px;
+
+}
+li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+ .icons a{
+    color: #C2C2C2;
+ }
+
+.marketing{
+    background-color: #E4E7E5;
+    display: flex;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+}
+.marketing p{
+    font-family: 'Manrope' , sans-serif;
+    padding: 40px;
+    margin: 10px;
+}
+.icons {
+    padding-top: 2rem;
+    display: flex;
+    gap: 1.6rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 15px;
+}
+
+.time ul{
+    padding: 2px;
+}
+h4{
+    padding-top: 20px;
+    padding-bottom: 12px;
+    
+}
+.msg{
+    width: 350px;
+    padding-bottom: 13px;
+}
+
+.explore ,.products , .support , .help{
+    padding-top: 12px;
+}
+
+.news{
+    padding-bottom: 20px;
+}
+.email_id ::placeholder{
+    padding: 10px;
+    margin: 15px;
+}
+.email_id input{
+   height: 50px;
+   width: 250px;
+   border-radius: 8px;
+}
+.sub{
+  
+    height: 50px;
+    width: 130px;
+   background-color: #ED3338;
+}
+.sub:hover{
+    cursor: pointer;
+    background-color: #151313;
+    transition: all 0.6s;
+}
+.sub p{
+   
+    padding-left: 25px;
+    padding-top: 15px;
+    width: 160px;
+}
+
+.wrap{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.connect{
+    text-decoration: underline;
+    font-family: 'Manrope' , sans-serif;
+}
+.sign_up{
+    width: 100%;
+}
+.bottom{
+    border-top: 1px solid white;
+    height: 1rem;
+    text-align: center;
+    background-color: #555555;
+    padding: 2rem 0;
+    color: white;
+}
+
+  /* media quries */
+    
+  @media only screen and ( min-width:420px) and (max-width:600px){
+    header{
+        display: none;
+    }
+
+    header .floatingHeading{
+        display: block;
+    }
+    .message{
+        display: none;
+    }
+
+    .mobile-header{
+        display: block;
+        width: 100%;
+        margin: 20px 10px;
+        z-index: 5;
+        position: relative;
+        background-color: #e5e3e3;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .mobile-navbar{
+        width: 100%;
+        display: flex;
+        /* gap:20px; */
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        bottom: 10px;
+        margin-top: 40px;
+    }
+    
+    .item1, .item4, .item3{
+        display: none;
+    }
+    .filter{
+        margin: 30px auto;
+        margin-top: 50px;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+     justify-content: space-between;
+    }
+    .drinkware_items{
+        width: 100%;
+        overflow-x:scroll;
+        scrollbar-width: thin;
+    }
+
+    .drinkware_items img{
+        width: 80px;
+      }
+      .filter_items{
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+        border:1px solid #c3c3c3;
+        height: 40px;
+        color: rgb(90, 90, 90);
+        font-size: 15px;
+        }
+
+        .filter_items_4thsec{
+            width: 80px;
+            border:1px solid #c3c3c3;
+            height: 40px;
+            display: flex;   
+            justify-content: center;
+            color: rgb(90, 90, 90);
+            font-size: 15px;
+        }
+      
+    .marketing {
+        display:none ;
+     }
+ 
+     footer{
+         display: none;
+     }
+     .aside_section{
+        position: fixed;
+        right:0px;
+     }
+  }
+  @media  screen and (min-width:601px) and (max-width:899px){
+    .drinkware_items{
+        width: 100%;
+        overflow-x:scroll;
+        scrollbar-width: thin;
+    }
+    input{
+        width: 350px;
+       height: 44px;
+       border-radius: 0 7px 7px 0;
+     }
+     .Products_1sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        position: relative;
+        top:30px
+    }
+    .Products_1sec a{
+        font-size: 12px;
+    }
+     .drinkware_items img{
+        width: 90px;
+      }
+      .filter_items{
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+        border:1px solid #c3c3c3;
+        height: 40px;
+        color: rgb(90, 90, 90);
+        font-size: 15px;
+        }
+
+        .filter_items_4thsec{
+            width: 80px;
+            border:1px solid #c3c3c3;
+            height: 40px;
+            display: flex;   
+            justify-content: center;
+            color: rgb(90, 90, 90);
+            font-size: 15px;
+        }
+        .product_pricetags{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
+            row-gap: 50px;
+            position: relative;
+            right: 22px;
+            margin-bottom:80px;
+         }
+         .aside_section{
+            position: fixed;
+            right:0px;
+         }
+}
+  
+@media  screen and (min-width:900px) and (max-width:1050px){
+    .drinkware_items{
+        width: 100%;
+        overflow-x:scroll;
+        scrollbar-width: thin;
+    }
+    input{
+        width: 600px;
+       height: 44px;
+       border-radius: 0 7px 7px 0;
+     }
+     .Products_1sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        position: relative;
+        top:30px
+    }
+    .Products_1sec a{
+        font-size: 13px;
+    }
+     .drinkware_items img{
+        width: 130px;
+      }
+      .filter_items{
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+        border:1px solid #c3c3c3;
+        height: 40px;
+        color: rgb(90, 90, 90);
+        font-size: 15px;
+        }
+
+        .filter_items_4thsec{
+            width: 80px;
+            border:1px solid #c3c3c3;
+            height: 40px;
+            display: flex;   
+            justify-content: center;
+            color: rgb(90, 90, 90);
+            font-size: 15px;
+        }
+        .product_pricetags{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
+            row-gap: 50px;
+            position: relative;
+            right: 38px;
+            margin-bottom:80px;
+         }
+         .aside_section{
+            position: fixed;
+            right:0px;
+         }
+}
