@@ -4,10 +4,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body{
     font-family: "Manrope" , sans-serif;
     background-color: #fbfbfb;
     scroll-behavior: smooth;
+    
 }
 /* mobile header */
 
@@ -16,6 +18,14 @@ body{
 }
 
 /* header section */
+
+
+/* header{
+    position: sticky;
+    top:0px;
+    z-index: 50;
+    background-color: white;
+} */
 
 .message{
     margin-top: 20px;
@@ -486,8 +496,8 @@ position: relative;
     color: #fff;
     font-family: 'Manrope' , sans-serif;
     min-height: 700px;
-    width: 100vw;
-   overflow: hidden;
+    width: 100%;
+    overflow: hidden;
 }
 ul{
     list-style: none;
