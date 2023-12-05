@@ -1,0 +1,763 @@
+* {
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+.Casserole {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.ig > .images_catagories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ig {
+  display: flex;
+  padding-inline-start: 40px;
+  padding-bottom: 60px;
+}
+.images_catagories > img {
+  width: 180px;
+  height: 180px;
+  padding: 8px;
+  cursor: pointer;
+}
+.images_catagories > button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.img > button > .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  padding-bottom: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 25px;
+}
+
+.main-container .img img {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.main-container .img {
+  width: 100%;
+}
+.img {
+  position: relative;
+  /* width: 200px; */
+  /* height: 200px; */
+  overflow: hidden;
+  transition: 1.2s ease-in-out;
+}
+.img .hover-i {
+  position: absolute;
+  left: 0;
+  /* width: 100%; */
+  /* height: 100%; */
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.img :hover {
+  width: 100%;
+  transform: scale(1.03);
+  cursor: pointer;
+  opacity: 0.9;
+}
+.img:hover .hover-i {
+  opacity: 1;
+  overflow: hidden;
+}
+
+.item-container {
+  position: relative;
+  box-shadow: 0 8px 12px 5px #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  flex: 1 1 20%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.item-container .quick {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  color: #f84248;
+  border: 1px solid #f84248;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.item-container .quick:hover {
+  color: #fff;
+  background: #f84248;
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 8px;
+  font-size: 14px;
+  z-index: 100;
+}
+.off {
+  top: 50px;
+  color: #fff;
+  background-color: #b30e13;
+}
+.new {
+  color: #67929c;
+  background-color: #fff;
+}
+.sold {
+  top: 80px;
+  color: white;
+  background-color: rgb(150, 150, 150);
+}
+.bdg {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  padding: 6px 10px;
+  font-size: 20px;
+  z-index: 100;
+}
+.heart {
+  background-color: #fff;
+  border-radius: 500%;
+}
+.eye {
+  top: 65px;
+  background-color: #fff;
+  border-radius: 500%;
+}
+.title:hover {
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #2a6876;
+}
+.text-color {
+  color: #d14c46;
+}
+.save {
+  color: #fff;
+  background-color: #d14c46;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px;
+}
+.sticky-container {
+  position: fixed;
+  background-color: #f1f1f1;
+  right: 20px;
+  top: 42%;
+  z-index: 200;
+  box-shadow: 0 3px 7px #0003;
+  font-size: 20px;
+}
+.sticky-bar {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.sticky-bar i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 40px; */
+  transition: background-color 0.3s ease;
+}
+
+.sticky-bar i:not(:last-child) {
+  border-bottom: 2px solid #ddd;
+}
+.sticky-bar i:hover {
+  background-color: rgb(226, 226, 226);
+}
+/* .filter {
+  display: flex;
+}
+.select {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #e3e3e3;
+  min-width: 210px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.select-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.select-btn img {
+  width: 30px;
+  height: 30px;
+  align-content: center;
+}
+.relevance {
+  margin-left: auto;
+} */
+
+.child {
+  padding: 10px 30px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.parent:hover > .child {
+  background: #f84248;
+  color: #fff;
+  opacity: 1;
+}
+
+.parent:hover > .hover-img {
+  opacity: 0.8;
+}
+.circle {
+  font-size: 25px;
+}
+.black {
+  color: black;
+}
+.maroon {
+  color: maroon;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
+.pink {
+  color: pink;
+}
+.grey {
+  color: silver;
+}
+.yellow {
+  color: bisque;
+}
+.dark-grey {
+  color: darkgray;
+}
+.purple {
+  color: plum;
+}
+.middle-div {
+  margin: 20px;
+}
+
+.middle-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.filter-div .category {
+  display: flex;
+  width: 170px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgrey;
+  padding: 8px 16px;
+  position: relative;
+  padding: 14px;
+  font-size: 14px;
+  /* z-index: 102; */
+}
+
+.filter-div .category .dropdown-content {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+  /* padding:0px 2px; */
+  top: 40px;
+  left: 0px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.dropdown-content .custom-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  /* justify-content: space-around; */
+  gap: 5px;
+}
+
+.filter-div .category:hover .dropdown-content {
+  display: block;
+}
+
+.filter-div .color .dropdown-content {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 110;
+  top: 40px;
+  left: 0px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+.connect {
+  padding: 0;
+}
+
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    margin-left: 5px;
+
+    &:hover {
+      &:after {
+        color: #e5e5e5;
+        /* // content: '\2714'; */
+        content: "\f04d";
+      }
+    }
+  }
+}
+
+.filter-div .color:hover .dropdown-content {
+  display: block;
+}
+
+.filter-div .color {
+  display: flex;
+  width: 170px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgrey;
+  padding: 8px 16px;
+  position: relative;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.filter-div .size {
+  display: flex;
+  width: 170px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgrey;
+  padding: 8px 16px;
+  z-index: 102;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.filter-div .size .dropdown-content {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 40px;
+  left: 0px;
+  text-align: center;
+}
+
+.filter-div .size:hover .dropdown-content {
+  display: block;
+}
+
+.filter-div .filter {
+  display: flex;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  padding: 8px 16px;
+  gap: 4px;
+  padding: 14px;
+  font-size: 14px;
+}
+.sort-div .sort {
+  display: flex;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  padding: 8px 16px;
+  position: relative;
+  font-size: 14px;
+  gap: 4px;
+  padding: 8px 16px;
+  padding: 14px;
+  font-size: 14px;
+  z-index: 103;
+}
+
+.sort-div .sort .dropdown-content {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 40px;
+  left: 0px;
+  text-align: center;
+}
+
+.sort-div .sort:hover .dropdown-content {
+  display: block;
+}
+.spacing-p {
+  word-spacing: 5px;
+  padding: 10px 0;
+}
+
+.red {
+  color: red;
+}
+
+.floatingHeading {
+  font-family: "Manrope", sans-serif;
+  display: inline-block;
+  background-color: white;
+  padding: 5px 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.logo {
+  height: 65px;
+  width: 65px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  position: relative;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 10px;
+}
+.personal_icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: larger;
+}
+
+.searchbar {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 5px;
+  padding-left: 10px;
+  position: absolute;
+  width: 750px;
+  margin: 0px 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.searchbar input {
+  background-color: #f6f6f6;
+  width: 380px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  font-style: "Manrope", sans-serif;
+  color: rgb(165, 165, 165);
+  font-size: 16px;
+}
+
+.personal_icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.personal_icons i,
+.personal_icons p {
+  margin-left: 10px;
+}
+.categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.item1 :hover {
+  /* background-image: ; */
+  height: 30px;
+  width: 40px;
+}
+.types {
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sub_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed3338;
+  padding: 13px;
+}
+
+.sub_type {
+  color: white;
+  text-decoration: none;
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-stretch: expanded;
+  margin: 1px;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  margin: 30px;
+  font-size: 40px;
+}
+footer {
+  display: grid;
+  grid-template-columns: 250px 200px 200px 200px 200px;
+  gap: 30px;
+  padding: 20px;
+  background-color: #555555;
+  color: #fff;
+  padding-bottom: 0px;
+  font-family: "Manrope", sans-serif;
+  height: 700px;
+  width: 100%;
+  grid-row-gap: 0;
+}
+ul {
+  list-style: none;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  padding-bottom: 12px;
+}
+li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.icons a {
+  color: #c2c2c2;
+}
+
+.marketing {
+  background-color: #e4e7e5;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.marketing p {
+  font-family: "Manrope", sans-serif;
+  padding: 40px;
+  margin: 10px;
+}
+.icons {
+  padding-top: 2rem;
+  display: flex;
+  gap: 1.6rem;
+  font-size: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 15px;
+}
+
+.time ul {
+  padding: 2px;
+}
+h4 {
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+.msg {
+  width: 450px;
+  padding-bottom: 10px;
+}
+
+.explore,
+.products,
+.support,
+.help {
+  padding-top: 12px;
+  /* padding-left: 100px; */
+}
+
+.news {
+  padding-bottom: 20px;
+}
+.email_id ::placeholder {
+  padding: 10px;
+  margin: 15px;
+}
+.email_id input {
+  height: 45px;
+  width: 270px;
+}
+.sub {
+  height: 50px;
+  width: 130px;
+  background-color: #ed3338;
+  border-radius: 3px;
+}
+
+.sub p {
+  padding-left: 25px;
+  padding-top: 15px;
+  width: 160px;
+}
+
+.wrap {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.connect {
+  text-decoration: underline;
+  font-family: "Manrope", sans-serif;
+}
+.sign_up {
+  width: 100%;
+}
+.bottom {
+  border-top: 1px solid white;
+  height: 1rem;
+  text-align: center;
+  background-color: #555555;
+  padding: 2rem 0;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.mycelloflask img {
+  width: 100%;
+}
+
+.project-section {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+  width: 450px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.box img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.project-hide {
+  position: absolute;
+  font: 700 0.75rem/0 "Manrope", sans-serif;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.259);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.box:hover img {
+  transform: scale(1.2);
+}
+
+.box:hover .project-hide {
+  opacity: 1;
+}
+.content .time ul {
+  padding-bottom: 10px;
+}
