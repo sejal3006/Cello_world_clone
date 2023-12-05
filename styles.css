@@ -8,9 +8,16 @@
     color:red;
 }
 body{
+   
     overflow-x: hidden;
     width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 100%;
     height: 100%;
+   
 }
 
 .floatingHeading {
@@ -82,9 +89,56 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
+    height: 30px;
+    text-decoration: none;
+    background-color: white;
+    
 
 }
 
+ .categories :hover .sub-menu-1{
+    display: block;
+   
+}
+.category-wrapper{
+    position: sticky;
+    top:0;
+    height: 200px;
+    z-index: 10;
+}
+.sub-menu-1{
+    display: none;
+    position: absolute;
+    background-color:red;
+    border-radius : 2px;
+} 
+categories .item1 a {
+    position: relative;
+      color: black; 
+  }
+  
+  /* .categories .item1 .sub-menu-1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+  }
+  
+  .categories .item1:hover .sub-menu-1 {
+    display: block;
+  }
+  
+  .categories .item1 .sub-menu-1 ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .categories .item1 .sub-menu-1 ul li {
+    margin-bottom: 5px;
+  } */ 
+  
 .types{
     color: rgb(30, 30, 30);
     text-decoration: none;
@@ -116,20 +170,31 @@ h2{
     margin: 30px;
     font-size: 40px;
 }
-.owl-carousel{
+/* .owl-carousel{
     display: flex;
     flex-wrap: nowrap;
-}
-.owl-carousel div{
+    overflow: hidden;
+} */
+.sliding-image div{
     max-width: 100%;
     width: 100%;
+  
+
+}
+.sliding-image div img{
+    width: 100%;
+    
+}
+.sliding-image{
+    overflow: hidden;
+    display: inline-flex;
 }
 
 
 footer {
     display: grid;
     grid-template-columns: 250px 200px 200px 200px 200px;
-    /* gap: 20px; */
+
     padding: 20px;
     background-color: #555555;
     color: #fff;
@@ -248,8 +313,14 @@ h4{
     color: white;
 }
 
+.mycelloflask{
+    height: 600px;
+    width: 100%;
+    z-index: 1;
+}
 .mycelloflask img{
     width: 100%;
+    height: 100%;
 }
 
 .bottom-div{
@@ -261,33 +332,30 @@ h4{
     margin:20px;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     gap:50px;
     position: relative;
-   
 }
 
 .cardrow{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* gap:10px; */
+   
     flex-wrap: wrap;
     position: relative;
-    gap: 0.5rem;
-   
-
+    gap: 2.0rem;
+    padding-left: 20px;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
+    
     gap:30px;
     border-radius: 10px;
     padding:7px;
-    height: 500px;
+    height: 450px;
     width: 270px;
     box-shadow: rgb(204, 204, 204) 0px 8px 12px 5px;
 }
@@ -302,7 +370,6 @@ h4{
   
 }
  
-
 .card-view .card-img{
    
     overflow: hidden;
@@ -338,12 +405,12 @@ h4{
     transform: scale(1.05);
 }
 .card-view .card-img img{
-    /* border: 1px solid black; */
+   
     width: 100%;
     height: 240px;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
-    /* background-color: #f8f7fc; */
+ 
    
 }
 
@@ -384,12 +451,12 @@ h4{
 
 .card-view .card-add{
     border: 1px solid #F84248;
-    /* padding: 12px 15px; */
+ 
     width: 100%;
     height: 48px;
-    /* position: relative; */
+    
     top:10px;
-    /* margin: 30px; */
+   
 }
 .card-view .card-add{
     font-size: 16px;
@@ -402,8 +469,7 @@ h4{
     background: #ffffff;
     outline: none;
     border: none;
-    /* position: absolute; */
-    /* width: 100%;  */
+   
     border: 1px solid #F84248;
     border-radius: 5px;
     left:50px;
@@ -429,17 +495,19 @@ h4{
 }
 
 .card-name{
-    /* color: #2a6876; */
-    overflow: hidden;
-    width: 260px;
-    margin-bottom: 20px;
-}
-
-.card-name{
     font-size: 17px;
     white-space: nowrap;
     overflow: hidden;
     font-weight: 400;
+    overflow: hidden;
+    width: 260px;
+    margin-bottom: 20px;
+}
+ .card-details .card-name :hover{
+    color: #2a6876;
+    cursor: pointer;
+    text-decoration: underline;
+    
 }
 
 .card-details .card_name:hover{
@@ -450,6 +518,8 @@ h4{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 3px;
+    margin: 18px;
 }
 
 .card-price .avail{
@@ -498,7 +568,7 @@ h4{
 
 .project-hide {
     position: absolute;
-    font: 700 0.75rem/0 "Manrope", sans-serif;
+    font:  "Manrope", sans-serif;
     width: 100%;
     height: 100%;
     top: 0;
@@ -507,11 +577,16 @@ h4{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 18px;
+    font-size: 45px;
     background-color: rgba(0, 0, 0, 0.259);
     z-index: 1;
     opacity: 0;
     transition: all 0.5s;
+}
+
+.project-hide a{
+    text-decoration:none;
+    color: white;
 }
 
 .box:hover img {

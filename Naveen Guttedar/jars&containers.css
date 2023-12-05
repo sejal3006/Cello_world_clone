@@ -13,6 +13,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  font-family:'Manrope', sans-serif ;
+  color: black;
+}
 body{
   font-family: 'Manrope', sans-serif;
 }
@@ -76,6 +81,44 @@ margin: 0.5rem 0;
   justify-content: space-between;
   align-items: center;
   border: 1px solid grey;
+  position: relative;
+}
+.dropdown-content{
+  position: absolute;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    top: 40px;
+    left: 0px;
+    text-align: left;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+}
+.input{
+  margin: 20px 0;
+}
+.custom-checkbox{
+  display: flex;
+    align-items: space-between;
+    font-size: 14px;
+    gap: 5px;
+}
+.category:focus .dropdown-content{
+  display:flex;
+}
+.color:focus .dropdown-content{
+  display: flex;
+}
+.size:focus .dropdown-content{
+  display: flex;
+}
+.sort_Wrapper:hover .dropdown-content{
+  display: flex;
+  background-color: red;
 }
 .fillter_Wrapper>button>.drop-icon::before{
  content: "▼";
@@ -332,13 +375,11 @@ box-shadow: 0 8px 12px 5px #959494;
  .cards_wrapper>ul{
   grid-template-columns: 1fr;
   padding: 0 rem;
+  align-items: center;
  } 
- .cards_wrapper>ul>li{
-  width: 100%;
-  padding: 0 20px;
- }
+ 
  .card_wrapper{
-  width: 100%;
+  width: 350px;
  }
 }
 @media only screen and (min-width: 820px) {
