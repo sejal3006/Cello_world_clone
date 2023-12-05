@@ -1119,7 +1119,7 @@ h4{
     }
 }
 
-@media only screen and ( max-width:768px) {
+@media only screen and ( max-width:768px) and  (min-width:451px) {
 
 
 
@@ -1214,24 +1214,27 @@ h4{
 
     .bottom-div .card-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap:20px;
-        width: 100%;
+        /* width: 100%;
         padding: 0;
-        margin: 0;
+        margin: 0; */
     }
 
     .bottom-div .card-container .cardrow {
         display: flex;
-        /* flex-direction: column; */
-        /* gap: 20px; */
+        flex-direction: row; 
+         gap: 20px;
     }
 
     .card-container .card{
-        width: 170px;
+        /* width: 170px; */
+        flex: 1;
+        width: auto;
         height: 450px;
         padding: 7px 7px;
         margin: 20px 7px;
+        gap:20px;
     }
 
     .card-view .card-img img {
@@ -1251,7 +1254,7 @@ h4{
     }
 
     .card-name{
-        font-size: x-small;
+        font-size: small;
         white-space: nowrap;
         overflow: hidden;
         font-weight: 400;
@@ -1263,11 +1266,11 @@ h4{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: x-small;
+        font-size: small;
     }
 
     .card-price .avail{
-        font-size: x-small;
+        font-size: small;
     }
 
     .card-price .save {
@@ -1285,7 +1288,7 @@ h4{
         border-radius: 50%;
         border: 1px solid rgb(0, 0, 0);
         bottom: 20px;
-        left: -60px;
+        left: -80px;
     }
 
     .card-view .card-img .new {
@@ -1342,5 +1345,55 @@ h4{
 
     div.footer-container{
         height: 60px;
+    }
+}
+
+/* laptop screen */
+@media  screen and (min-width:900px) and (max-width:1024px){
+    .navbar{
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .searchbar{
+        width: 60%;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    
+    .categories a {
+        font-size: 14px;
+    }
+
+    .filter-div .category {
+        width: 150px;
+    }
+
+    .filter-div .color{
+        width: 150px;
+    }
+    .filter-div .size{
+        width: 150px;
+    }
+
+    .filter-div .filter{
+        width: 150px;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .marketing{
+        flex-wrap: nowrap;
+    }
+    .cardrow{
+        gap: 30px;
     }
 }
