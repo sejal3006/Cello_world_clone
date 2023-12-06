@@ -25,6 +25,7 @@ body {
   display: flex;
   padding-inline-start: 40px;
   padding-bottom: 60px;
+  gap: 5px;
 }
 .images_catagories > img {
   width: 180px;
@@ -141,6 +142,11 @@ body {
   color: white;
   background-color: rgb(150, 150, 150);
 }
+.sold-out {
+  color: white;
+  background-color: rgb(150, 150, 150);
+  top: 50px;
+}
 .bdg {
   position: absolute;
   top: 20px;
@@ -158,6 +164,7 @@ body {
   background-color: #fff;
   border-radius: 500%;
 }
+
 .title:hover {
   font-size: 16px;
   cursor: pointer;
@@ -206,31 +213,31 @@ body {
   background-color: rgb(226, 226, 226);
 }
 /* .filter {
-  display: flex;
-}
-.select {
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #e3e3e3;
-  min-width: 210px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.select-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-}
-.select-btn img {
-  width: 30px;
-  height: 30px;
-  align-content: center;
-}
-.relevance {
-  margin-left: auto;
-} */
+    display: flex;
+  }
+  .select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e3e3e3;
+    min-width: 210px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .select-btn img {
+    width: 30px;
+    height: 30px;
+    align-content: center;
+  }
+  .relevance {
+    margin-left: auto;
+  } */
 
 .child {
   padding: 10px 30px;
@@ -275,6 +282,9 @@ body {
 }
 .purple {
   color: plum;
+}
+.orange {
+  color: orange;
 }
 .middle-div {
   margin: 20px;
