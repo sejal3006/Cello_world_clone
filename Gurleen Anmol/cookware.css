@@ -1146,10 +1146,618 @@ h4{
         height: 60px;
     }
 }
-@media screen and (max-height: 650px) {
-    .middle-flex{
+/* Mobile styling */
+
+@media only screen and ( max-width:450px) {
+
+
+
+    body{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        display: none;
+    }
+
+    header .floatingHeading{
+        display: block;
+    }
+    .mobile-header{
+        display: block;
+        width: 100%;
+        margin: 20px 10px;
+        z-index: 5;
+    }
+
+    .mobile-navbar{
+        width: 100%;
+        display: flex;
+        /* gap:20px; */
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+
+    footer{
+        display: none;
+    }
+    .main{
+        width: 450px;
+    }
+    .sticky-container{
+        display: none;
+    }
+    .top-div {
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+
+    .top-div .item-flex{
+        display: flex;
+        /* width: 100%; */
+        overflow-x: auto;
+        /* flex: 0 0 calc(33.33% - 20px); */
+    }
+
+    .middle-div{
+        overflow-x: hidden;
+        margin: 20px 10px;
+        padding-left: 0px;
+        /* width: 400px; */
+        overflow-y: visible;
+    }
+
+    .filter-div{
+        width: 400px;
+        /* flex-direction: column; */
+        gap: 10px;
+        position: absolute;
+    }
+
+    .filter-div .category{
+        display: flex;
+        padding: 8px 8px;
+        font-size: 14px;
+        gap: 4px;
+        position: relative;
+        /* border: none; */
+    }
+
+    .filter-div .category .dropdown-content{
+        position: absolute;
+        display: none;
+        /* width: 200px; */
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        /* padding:0px 2px; */
+        /* top:440px; */
+        left: 0px;
+        text-align: center;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        position: relative;
+      }
+    
+    
+    
+      .dropdown-content .custom-checkbox{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        gap: 5px;
+      }
+    
+      .filter-div  .category:hover .dropdown-content{
+        display: block;
+        position: absolute;
+        left: -90pxs;
+
+        z-index: 5;
+        /* height: 160px; */
+
+      }
+    
+      .filter-div .color .dropdown-content{
+        position: absolute;
+        display: none;
+        /* width: 200px; */
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 5;
+        /* top:40px; */
+        left: 0px;
+        text-align: center;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        position: relative;
+      }
+    
+    .custom-checkbox {
+        position: relative;
+        cursor: pointer;
+        margin-left: 5px;
+    
+        input[type=checkbox] {
+            position: absolute;
+            opacity: 0;
+            margin-left: 5px;
+    
+            &:hover {
+                    &:after {
+                        color: #e5e5e5;
+                        /* // content: '\2714'; */
+                       content: "\f04d"; 
+                    }
+            }
+        }
+    }
+    
+    .filter-div .color{
+        display: flex;
+        padding: 8px 8px;
+        font-size: 14px;
+        gap: 4px;
+    }
+
+    .filter-div .size{
+        display: flex;
+        padding: 8px 8px;
+        font-size: 14px;
+        gap: 4px;
+        z-index: 5;
+    }
+
+    .filter-div .filter{
+        display: flex;
+        padding: 8px 2px;
+        font-size: 14px;
+        gap: 4px;
+    }
+
+    .sort-div{
+        display: none;
+        margin-left: 30px;
+    }
+
+    .bottom-div .card-container{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bottom-div .card-container .cardrow {
+        display: flex;
+        /* flex-direction: column; */
+        /* gap: 20px; */
+    }
+
+    .card-container .card{
+        width: 170px;
+        height: 450px;
+        padding: 7px 7px;
+        margin: 20px 7px;
+    }
+
+    .card-view .card-img img {
+        object-fit: fill;
+    }
+
+    .card-view .card-img img.hover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        object-fit: fill;
+        animation: zoom-in-zoom-out;
+    }
+
+    .card-name{
+        font-size: x-small;
+        white-space: nowrap;
+        overflow: hidden;
+        font-weight: 400;
+        left: 10px;
+        position: relative;
+    }
+
+    .card-price {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-size: x-small;
+    }
+
+    .card-price .avail{
+        font-size: x-small;
+    }
+
+    .card-price .save {
+        font-size: x-small;
+        background-color: #d14c46;
+        color: #fff;
+        padding: 6px;
+        border-radius: 3px;
+    }
+
+    .card-info .card-clear {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0);
+        bottom: 20px;
+        left: -60px;
+    }
+
+    .card-view .card-img .new {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        color: #2a6876;
+        font-size: x-small;
+        font-weight: 400;
+        padding: 2px 10px;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    .card-view .card-img .off {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        color: #fff;
+        font-size: x-small;
+        border: 1px solid #d14c46;
+        padding: 2px 10px;
+        background-color: #d14c46;
+        z-index: 2;
+    }
+
+    .marketing {
+        background-color: #E4E7E5;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow-y: scroll;
+        height: 90px;
+        display: none;
+    }
+    
+
+    .marketing-mobile{
+        display:block;
+        background-color: #E4E7E5;
+        justify-content: flex-start;
+        height: 90px;
+    }
+    
+    .marketing-mobile marquee p{
+        display:inline-block;
+        padding: 30px 0px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.footer-container{
+        height: 60px;
+    }
+}
+
+@media only screen and ( max-width:768px) and  (min-width:451px) {
+
+
+
+    body{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        display: none;
+    }
+
+    header .floatingHeading{
+        display: block;
+    }
+    .mobile-header{
+        display: block;
+        width: 100%;
+        margin: 20px 10px;
+        z-index: 5;
+    }
+
+    .mobile-navbar{
+        width: 100%;
+        display: flex;
+        /* gap:20px; */
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+ 
+
+    footer{
+        display: none;
+    }
+    .main{
+        width: 450px;
+    }
+    .top-div {
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+
+    .top-div .item-flex{
+        display: flex;
+        /* width: 100%; */
+        overflow-x: auto;
+        /* flex: 0 0 calc(33.33% - 20px); */
+    }
+
+    .middle-div{
+        overflow-x: hidden;
+        margin: 20px 10px;
+        padding-left: 0px;
+        /* width: 400px; */
+    }
+
+    .filter-div{
+        width: 400px;
+        position: absolute;
+    }
+
+    .filter-div .category{
+        display: flex;
+        padding: 8px 8px;
+        font-size: 14px;
+        gap: 6px;
+        z-index: 5;
+    }
+    .filter-div .color{
+        display: flex;
+        padding: 8px 8px;
+        font-size: 14px;
+        gap: 6px;
+        z-index: 5;
+    }
+
+    .filter-div .size{
+        display: flex;
+        padding: 8px 8px;
+        font-size: 14px;
+        gap: 6px;
+        z-index: 5;
+    }
+
+    .filter-div .filter{
+        display: flex;
+        padding: 8px 2px;
+        font-size: 14px;
+        gap: 6px;
+    }
+
+    .sort-div{
+        display: flex;
+        padding: 8px 2px;
+        position: absolute;
+        right: 20px;
+        z-index: 5;
+    }
+
+    .bottom-div .card-container{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        /* width: 100%;
+        padding: 0;
+        margin: 0; */
+    }
+
+    .bottom-div .card-container .cardrow {
+        display: flex;
+        flex-direction: row; 
+         gap: 20px;
+    }
+
+    .card-container .card{
+        /* width: 170px; */
+        flex: 1;
+        width: auto;
+        height: 450px;
+        padding: 7px 7px;
+        margin: 20px 7px;
+        gap:20px;
+    }
+
+    .card-view .card-img img {
+        object-fit: fill;
+    }
+
+    .card-view .card-img img.hover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        object-fit: fill;
+        animation: zoom-in-zoom-out;
+    }
+
+    .card-name{
+        font-size: small;
+        white-space: nowrap;
+        overflow: hidden;
+        font-weight: 400;
+        left: 10px;
+        position: relative;
+    }
+
+    .card-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: small;
+    }
+
+    .card-price .avail{
+        font-size: small;
+    }
+
+    .card-price .save {
+        font-size: x-small;
+        background-color: #d14c46;
+        color: #fff;
+        padding: 6px;
+        border-radius: 3px;
+    }
+
+    .card-info .card-details {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0);
+        bottom: 20px;
+        left: -80px;
+    }
+    .card-info .color {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0);
+        bottom: 20px;
+        left: -80px;
+    }
+    .card-view .card-img .new {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        color: #2a6876;
+        font-size: x-small;
+        font-weight: 400;
+        padding: 2px 10px;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    .card-view .card-img .off {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        color: #fff;
+        font-size: x-small;
+        border: 1px solid #d14c46;
+        padding: 2px 10px;
+        background-color: #d14c46;
+        z-index: 2;
+    }
+
+    .marketing {
+        background-color: #E4E7E5;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow-y: scroll;
+        height: 90px;
+        display: none;
+    }
+    
+
+    .marketing-mobile{
+        display:block;
+        background-color: #E4E7E5;
+        justify-content: flex-start;
+        height: 90px;
+    }
+    
+    .marketing-mobile marquee p{
+        display:inline-block;
+        padding: 30px 0px;
+    }
+
+    footer{
+       display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.footer-container{
+        height: 60px;
+    }
+}
+
+/* laptop screen */
+@media  screen and (min-width:900px) and (max-width:1024px){
+    .navbar{
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .searchbar{
+        width: 60%;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    
+    .categories a {
+        font-size: 14px;
+    }
+
+    .filter-div .category {
+        width: 150px;
+    }
+
+    .filter-div .color{
+        width: 150px;
+    }
+    .filter-div .size{
+        width: 150px;
+    }
+
+    .filter-div .filter{
+        width: 150px;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .marketing{
+        flex-wrap: nowrap;
+    }
+    .cardrow{
+        gap: 30px;
     }
 }

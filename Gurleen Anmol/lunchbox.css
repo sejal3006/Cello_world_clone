@@ -389,7 +389,8 @@ h2{
     display: block;
   }
 
-.filter-div  .filter{
+
+  .filter-div  .filter{
     display: flex;
     width: 200px;
     justify-content: center;
@@ -397,6 +398,22 @@ h2{
     border: 1px solid lightgrey;
     padding: 8px 16px ;
     gap: 4px;
+}
+
+
+  .filter-div .filter:hover .dropdown-content{
+    display: block;
+  }
+  .filter-div .filter .dropdown-content{
+    position: absolute;
+    display: none;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    top:40px;
+    right: 20px;
+    text-align: center;
 }
 .sort-div .sort {
     display: flex;
