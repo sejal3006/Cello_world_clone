@@ -184,14 +184,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
+    height: 30px;
     text-decoration: none;
     background-color: white;
-<<<<<<< HEAD
     position: relative;
-=======
-   padding: 1rem; 
-
->>>>>>> aab3615769fb0ed4249b685a3a51a7ef86fcce49
 }
 
  .categories :hover .sub-menu-1{
@@ -252,11 +248,10 @@ body{
    
 }
 .sub-menu-1 .list{
-    width:30%;  
+    width:20%;  
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    
     
     
 }
