@@ -321,48 +321,19 @@ h2{
     color: #333;
     position: relative;
   }
-/* 
-  .dropdown-content a::before{
-    content: "\f04d";
-    position: absolute;
-    left: -5px;
-    width: 30px;
-    padding:0px 10px;
-    height: 20px;
-    margin-right: 5px;
-    
-  }
 
-  .dropdown-content a:hover::before {
-    content: "\f04d";
-  } */
 
-  /* .dropdown-content a::after{
-    content: "(1)";
-    position: absolute;
-    left: 135px;
-    width: 30px;
-    padding:0px 10px;
-    height: 20px;
-    margin-right: 5px;
-    
-  } */
 
   .dropdown-content .custom-checkbox{
     display: flex;
     align-items: center;
     font-size: 14px;
-    /* justify-content: space-around; */
     gap: 5px;
   }
 
   .filter-div  .category:hover .dropdown-content{
     display: block;
   }
-
-  /* .filter-div .color{
-
-  } */
 
   .filter-div .color .dropdown-content{
     position: absolute;
@@ -747,12 +718,11 @@ h2{
 footer {
     display: grid;
     grid-template-columns: 250px 200px 200px 200px 200px;
-    /* gap: 20px; */
+
     padding: 20px;
     background-color: #555555;
     color: #fff;
     font-family: 'Manrope' , sans-serif;
-    height: 700px;
     width: 100%;
    
 }
@@ -983,10 +953,14 @@ h4{
         margin: 20px 10px;
         padding-left: 0px;
         /* width: 400px; */
+        overflow-y: visible;
     }
 
     .filter-div{
         width: 400px;
+        /* flex-direction: column; */
+        gap: 10px;
+        position: absolute;
     }
 
     .filter-div .category{
@@ -994,7 +968,90 @@ h4{
         padding: 8px 8px;
         font-size: 14px;
         gap: 4px;
+        position: relative;
+        /* border: none; */
     }
+
+    .filter-div .category .dropdown-content{
+        position: absolute;
+        display: none;
+        /* width: 200px; */
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        /* padding:0px 2px; */
+        /* top:440px; */
+        left: 0px;
+        text-align: center;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        position: relative;
+      }
+    
+    
+    
+      .dropdown-content .custom-checkbox{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        gap: 5px;
+      }
+    
+      .filter-div  .category:hover .dropdown-content{
+        display: block;
+        position: absolute;
+        left: -90pxs;
+
+        z-index: 5;
+        /* height: 160px; */
+
+      }
+    
+      .filter-div .color .dropdown-content{
+        position: absolute;
+        display: none;
+        /* width: 200px; */
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 5;
+        /* top:40px; */
+        left: 0px;
+        text-align: center;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        position: relative;
+      }
+    
+    .custom-checkbox {
+        position: relative;
+        cursor: pointer;
+        margin-left: 5px;
+    
+        input[type=checkbox] {
+            position: absolute;
+            opacity: 0;
+            margin-left: 5px;
+    
+            &:hover {
+                    &:after {
+                        color: #e5e5e5;
+                        /* // content: '\2714'; */
+                       content: "\f04d"; 
+                    }
+            }
+        }
+    }
+    
     .filter-div .color{
         display: flex;
         padding: 8px 8px;
@@ -1007,6 +1064,7 @@ h4{
         padding: 8px 8px;
         font-size: 14px;
         gap: 4px;
+        z-index: 5;
     }
 
     .filter-div .filter{
@@ -1146,7 +1204,8 @@ h4{
     }
 
     footer{
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     div.footer-container{
@@ -1214,6 +1273,7 @@ h4{
 
     .filter-div{
         width: 400px;
+        position: absolute;
     }
 
     .filter-div .category{
@@ -1221,12 +1281,14 @@ h4{
         padding: 8px 8px;
         font-size: 14px;
         gap: 6px;
+        z-index: 5;
     }
     .filter-div .color{
         display: flex;
         padding: 8px 8px;
         font-size: 14px;
         gap: 6px;
+        z-index: 5;
     }
 
     .filter-div .size{
@@ -1234,6 +1296,7 @@ h4{
         padding: 8px 8px;
         font-size: 14px;
         gap: 6px;
+        z-index: 5;
     }
 
     .filter-div .filter{
@@ -1246,6 +1309,9 @@ h4{
     .sort-div{
         display: flex;
         padding: 8px 2px;
+        position: absolute;
+        right: 20px;
+        z-index: 5;
     }
 
     .bottom-div .card-container{
@@ -1376,7 +1442,8 @@ h4{
     }
 
     footer{
-        display: none;
+       display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     div.footer-container{
