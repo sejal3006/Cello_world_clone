@@ -52,7 +52,6 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 17px;
 
   }
 
@@ -163,15 +162,12 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: space-between;
 }
 
 .item span{
     padding:4px 16px;
     transition: filter 10s ease-in-out;
-    word-wrap: normal;
-    width:13rem;
 }
 
 .item image{
@@ -235,7 +231,6 @@ h2{
     top:40px;
     left: 0px;
     text-align: center;
-    z-index: 2;
 }
 
 .dropdown-content a {
@@ -294,7 +289,7 @@ h2{
     width: 200px;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    z-index: 1;
     top:40px;
     left: 0px;
     text-align: center;
@@ -403,26 +398,6 @@ h2{
     padding: 8px 16px ;
     gap: 4px;
 }
-
-
-  .filter-div .filter:hover .dropdown-content{
-    display: block;
-  }
-  .filter-div .filter .dropdown-content{
-    position: absolute;
-    display: none;
-    width: 250px;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 3;
-    top:40px;
-    right: 20px;
-    text-align: center;
-}
-
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
- 
 .sort-div .sort {
     display: flex;
     width: 200px;
@@ -434,7 +409,6 @@ h2{
     font-size: 14px;
     gap: 4px;
     padding: 8px 16px ;
-    z-index: 2;
 }
 
 .sort-div .sort .dropdown-content{
@@ -447,7 +421,6 @@ h2{
     top:40px;
     left: 0px;
     text-align: center;
-    z-index: 2;
 }
 
 .sort-div .sort:hover .dropdown-content{
@@ -506,7 +479,7 @@ h2{
     /* border:1px solid black; */
 }
 
-.card-view .card-img {
+.card-view .card-img{
     /* border: 1px solid black; */
     /* background-color: #f8f7fc; */
     /* z-index: 1; */
@@ -540,45 +513,8 @@ h2{
     background-color: #d14c46;
     z-index:1;
 }
-.card-view .card-img .sold_out{
-    position: absolute;
-    top:70px;
-    left: 20px;
-    color:white;
-    font-size: 14px;
-    border: 1px solid rgb(133, 124, 124);
-    padding: 1px 8px;
-    background-color: rgb(167, 161, 161);
-    z-index:1;
-}
 
-.card-view .card-img .bdg_heart{
-    position: absolute;
-cursor:pointer;
-    right: 20px;
-   color:black;
-    font-size: 15px;
-    border: 1px solid white;
-    background-color: white;;
-    padding: 2px 10px;
-    border-radius: 50%;
-    gap:10px;
-    z-index:1;
-}
-.card-view .card-img .bdg_eye{
-    cursor:pointer;
-    position: absolute;
-    top:2rem;   
-    right: 20px;
-   color:black;
-   font-size: 15px;
-    border: 1px solid white;
-    background-color: white;;
-    padding: 2px 10px;
-    border-radius: 50%;
-    z-index:1;
-}
-.card-img {
+.card-img:hover{
     animation: zoom-in-zoom-out;
 }
 
@@ -599,7 +535,7 @@ cursor:pointer;
     /* border: 1px solid black; */
     width: 100%;
     height: 240px;
-    object-fit:cover;
+    object-fit: cover;
     transition: opacity 0.5s ease-in-out;
     /* background-color: #f8f7fc; */
    
@@ -608,6 +544,7 @@ cursor:pointer;
 .card-view .card-img:hover img{
     opacity: 0;
 }
+
 
 
 .card-view .card-img img.hover-image {
@@ -628,8 +565,6 @@ cursor:pointer;
   .card-view .card-img:hover .hover-image{
     opacity: 1;
   }
-
-  
   
 @keyframes zoom-in-zoom-out {
     0% {
@@ -648,7 +583,6 @@ cursor:pointer;
 
 .card-view .card-add{
     border: 1px solid #F84248;
-    cursor:pointer;
     /* padding: 12px 15px; */
     width: 100%;
     height: 48px;
@@ -1009,7 +943,7 @@ h4{
         font-size: 14px;
         gap: 4px;
     }
-    
+
     .sort-div{
         display: none;
     }
@@ -1144,12 +1078,5 @@ h4{
 
     div.footer-container{
         height: 60px;
-    }
-}
-@media screen and (max-height: 650px) {
-    .middle-flex{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 }
