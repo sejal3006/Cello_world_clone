@@ -366,6 +366,10 @@ box-shadow: 0 8px 12px 5px #959494;
 .p_color>#col-2{
   background-color: maroon;
 }
+.wrap{
+  display: flex;
+  width: 100%;
+}
 @media only screen and (max-width: 820px){
   .cards_wrapper>ul{
     grid-template-columns: 1fr 1fr;
@@ -392,4 +396,51 @@ box-shadow: 0 8px 12px 5px #959494;
   background-color: #ccc;
   width: 2px;
 }
+ footer{
+  grid-template-columns:  250px 200px 200px;
+  
+ }
+ footer>.help{
+  grid-column: 2/4;
+ 
+}
+}
+@media only screen and (max-width:600px){
+  footer{
+    grid-template-columns: 1fr;
+    grid: row;
+  }
+  
+.email_id>input{
+   height: 50px;
+   max-width: 190px ;
+}
+  .explore{
+    grid-row: 1;
+  }
+  .products{
+    grid-row: 2;
+  }
+  .support{
+    grid-row: 3;
+  }
+  .help{
+    grid-row:4;
+    grid-column: 1/1 !important;
+  }
+    .content{
+    grid-row: 6;
+  }
+  .sign_up{
+    grid-row: 5;
+  }
+  footer ul{
+    display: none;
+  }
+  .connect>ul{
+    display: block;
+  }
+  .time>ul{
+    display: block;
+  }
 }
