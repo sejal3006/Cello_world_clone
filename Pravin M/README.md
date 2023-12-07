@@ -30,4 +30,7 @@ https://lok-ii.github.io/JavaScriptProjectsCollection/Rupesh-Mandal/index.html
 The application utilizes a combination of HTML and CSS for its structure and styling. Key styling features
 include a grid and flex properties, hover effects, transitions and media query for responsive design.
 ## UI
-![image](https://github.com/sejal3006/Cello_world_clone/blob/main/Pravin%20M/Images/Screenshot%202023-12-07%20183510.png) 
+
+![image](/Pravin%20M/Images/Screenshot%202023-12-07%20183510.png)
+![image](/Pravin%20M/Images/Screenshot%202023-12-07%20183510.png)
+![image](/Pravin%20M/Images/Screenshot%202023-12-07%20183510.png)
