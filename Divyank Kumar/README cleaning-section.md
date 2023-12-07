@@ -1,4 +1,4 @@
-# Casseroles 
+# Cleaning Supplies
 
 # Table of Contents
   - [Introduction](#introduction)
@@ -11,7 +11,7 @@
   - [Contact](#contact)
 
 ## Introduction
-This web page represents the project 'Cello World' developed by Geekster as part of Geekhathon. The page is exclusively crafted using HTML and CSS. Its purpose is to serve as a user interface for effortlessly browsing and ordering casseroles. With this webpage, users can efficiently explore and ensuring a seamless and user-friendly experience.
+This web page represents the project 'Cello World' developed by Geekster as part of Geekhathon. The page is exclusively crafted using HTML and CSS. Its purpose is to serve as a user interface for effortlessly browsing and ordering cleaning supplies. With this webpage, users can efficiently explore and ensuring a seamless and user-friendly experience.
 
 ## Features
 
@@ -38,14 +38,14 @@ This web page represents the project 'Cello World' developed by Geekster as part
 - **Version Control Hosting:**
   - GitHub
 
-## Live Demo : <a href="https://sejal3006.github.io/Cello_world_clone/Divyank%20Kumar/casseroles.html"> CLick Here </a>
+## Live Demo : <a href="https://sejal3006.github.io/Cello_world_clone/Divyank%20Kumar/cleaning-section.html"> CLick Here </a>
 
 
 ## Screenshots
-![Local Image](./Casserole%20ss/Screenshot%202023-12-07%20134418.png)
-![Local Image](./Casserole%20ss/Screenshot%202023-12-07%20134606.png)
-![Local Image](./Casserole%20ss/Screenshot%202023-12-07%20134703.png)
-![Local Image](./Casserole%20ss/Screenshot%202023-12-07%20134815.png)
+![Local Image](./Cleaning%20Supplies%20ss/Screenshot%202023-12-07%20140241.png)
+![Local Image](./Cleaning%20Supplies%20ss/Screenshot%202023-12-07%20140546.png)
+![Local Image](./Cleaning%20Supplies%20ss/Screenshot%202023-12-07%20140706.png)
+![Local Image](./Cleaning%20Supplies%20ss/Screenshot%202023-12-07%20140805.png)
 
 ## Challenges Faced
 
