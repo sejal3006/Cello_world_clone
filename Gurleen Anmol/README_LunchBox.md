@@ -73,4 +73,4 @@ This project is created for learning purposes. There is no specific license asso
 
 ## Contact
 
-For any questions or suggestions, you can contact divyank.kumar1432@gmail.com
+For any questions or suggestions, you can contact ashley6dec@gmail.com
