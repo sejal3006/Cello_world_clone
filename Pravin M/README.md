@@ -7,12 +7,12 @@
 </ul>
 <h2>Table of Contents</h2>
 
-- [Hosted Link](#demo)
+- [Hosted Link](#HostedLinl)
 - [Features](#features)
 - [Files](#files)
 - [Styling](#styling)
 - [UI](#ui)
- ## Demo
+ ## Hosted Link
 
 https://lok-ii.github.io/JavaScriptProjectsCollection/Rupesh-Mandal/index.html
  ## Features:- <br>
