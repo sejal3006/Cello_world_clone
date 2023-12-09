@@ -13,8 +13,8 @@
 - [Styling](#styling)
 - [UI](#ui)
  ## Hosted Link
+<a href="https://sejal3006.github.io/Cello_world_clone"> Click Here </a>
 
-https://lok-ii.github.io/JavaScriptProjectsCollection/Rupesh-Mandal/index.html
  ## Features:- <br>
   - Responsive design for mobile and desktop <br>
   - Implemented semantic HTML tags throughout the project to enhance accessibility, readibility and structure. <br>
